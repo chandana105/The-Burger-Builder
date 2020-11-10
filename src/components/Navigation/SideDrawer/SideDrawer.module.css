@@ -1,0 +1,47 @@
+.SideDrawer {
+  position: fixed;
+  width : 280px;
+  max-width: 70%;
+  height: 100%;
+  top:0;
+  left:0;
+  z-index: 200;
+  background-color: #fff;
+  padding : 32px 16px;
+  box-sizing: border-box;
+  transition: transform 0.3s ease-out;
+  /* it ll be imp for opening n d closd thesidedrawr */
+
+}
+
+/* sidedrwaer ll only be visdble on small device screen tbhi wid ht uss acc, max-width = 70% of width ie 280px ?? i think so , so that on super narrow devices , it doesnt go over theedges , zindex > bacdrop as sidedrawshould be above of backdrop , i ll add trnasition prop to react to to chanfges of the transform propert nd animate them over 300ms with the easeout timing fnx*/
+
+
+
+/* if our device width exceed 500px then our sderar dospnone */
+@media (min-width : 500px) {
+   .SideDrawer {
+     display: none;
+   }
+}
+
+
+/* now for testing to swtich to mobile device mode in brwser  */
+
+/* then i ll set opne nd clsoe proprty wch ll be renderd conditional for whch  i ll settransform proty to translX 0  */
+
+.Open {
+  transform : translateX(0);
+  /* it ll shift thesdierat posi i def up in sidedrwr */
+}
+
+.Close {
+  transform : translateX(-100%);
+  /* it ll shift to left */
+}
+
+.Logo {
+  height : 11%;
+  margin-bottom: 32px
+  ;
+}

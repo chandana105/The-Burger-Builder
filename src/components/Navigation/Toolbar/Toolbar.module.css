@@ -1,0 +1,36 @@
+/* so first we ll set the styling acc to moboile devices  */
+.Toolbar {
+  height : 56px;
+  width : 100%;
+  position: fixed;
+  top:0;
+  left : 0;
+  background-color: #703b09;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+  box-sizing: border-box;
+  z-index: 90;
+}
+
+.Toolbar nav {
+  height: 100%;
+}
+
+
+.Logo {
+  height : 80%
+}
+
+/* as nottotshw nav in smallscreens ki 499px tk jaan uss aagye nhi ie mobile devices */
+
+/* so if were on mobile devices */
+@media (max-width : 499px ) {
+  .DesktopOnly {
+    display: none;
+  }
+}
+
+/* pos fixed so that whe we scroll it is at top nd for top left, top 0, dospl flex so that all the items allign in the toolbar are aligned next toeach other  coz thedefautl directional flexbox is row positionig leeltns next to each othr if thy are block elee,tns, justcont spacebtw so that the availbe space is filled  with the lee,tns inside this toolbar eleemnt in theend align items ie how they re to be aligned verticlly, z-inde to be lower than backdro coz usse uper hona caie backrop  */
+/* now another rulw to control gow thenav itme is displayed whe nested inside a toolbar height = 100% so that in the navigation , i can then also control thehight relative t othe toolbar height nd can make srue that the navigation items span thefull height of this toolbar    */
